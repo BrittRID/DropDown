@@ -15,6 +15,7 @@ namespace WebContactsRedo.Models
         public string ZipCode { get; set; }
 
         public string Brand { get; set; }
+
         public string Sphere { get; set; }
         public string Cylinder { get; set; }
         public double Axis { get; set; }

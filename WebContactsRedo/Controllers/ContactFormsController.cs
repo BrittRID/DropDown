@@ -16,6 +16,8 @@ namespace WebContactsRedo.Controllers
             _context = context;
         }
 
+
+
         // GET: ContactForms
         public async Task<IActionResult> Index()
         {
@@ -28,6 +30,20 @@ namespace WebContactsRedo.Controllers
 
             return View(await _context.ContactForm.ToListAsync());
         }
+
+
+
+         private List<Brand> GetBrand()
+        {
+            var Brand = new List<Brand>();
+            Brand.Add(new Brand() { Id = 1, Title = "Proclear 1" });
+            Brand.Add(new Brand() { Id = 2, Title = "Proclear 2" });
+            Brand.Add(new Brand() { Id = 3, Title = "Proclear 3" });
+            Brand.Add(new Brand() { Id = 4, Title = "Proclear 4" });
+
+            return Brand;
+        }
+
 
         // GET: ContactForms/ShowSearchForm - search for name 
         public async Task<IActionResult> ShowSearch()
