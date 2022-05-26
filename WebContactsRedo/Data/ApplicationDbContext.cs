@@ -10,5 +10,6 @@ namespace WebContactsRedo.Data
         {
         }
         public DbSet<WebContactsRedo.Models.ContactForm> ContactForm { get; set; }
+        public DbSet<WebContactsRedo.Models.SelectListItem> SelectListItem { get; set; }
     }
 }

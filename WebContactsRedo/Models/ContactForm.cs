@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
-
-namespace WebContactsRedo.Models
+﻿namespace WebContactsRedo.Models
 {
     public class ContactForm
     {

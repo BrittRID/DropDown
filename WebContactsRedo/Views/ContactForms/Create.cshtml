@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Create";
+     ViewData["DropDownItems"] = new List<object>() { new { label = "One", value = 1 }, new { label = "Two", value = 2 }, new { label = "Three", value = 3 } };
 }
 
 <h1>Create</h1>
@@ -49,22 +50,137 @@
             </div>
             <div class="form-group">
                 <label asp-for="Brand" class="control-label"></label>
-                <input asp-for="Brand" class="form-control" />
+               @* <input asp-for="Brand" class="form-control"/>   *@              
+                <input asp-for="Brand" class="form-control" type="text" list="brand" />
+                 <datalist id="brand">
+                 <option>1 Day Moist</option>
+                 <option>Proclear</option>
+                 <option>AC 2</option>
+                 <option>1 Day Oasys</option>
+                 </datalist>
                 <span asp-validation-for="Brand" class="text-danger"></span>
-            </div>
+            </div>        
             <div class="form-group">
                 <label asp-for="Sphere" class="control-label"></label>
-                <input asp-for="Sphere" class="form-control" />
-                <span asp-validation-for="Sphere" class="text-danger"></span>
+                @*<input asp-for="Sphere" class="form-control" />*@                
+                <input asp-for="Sphere" class="form-control" type="text" list="sphere" />
+                    <datalist id="sphere">                    
+                     <option> +2.50</option>
+                     <option >+2.25</option>
+                     <option >+2.00</option>
+                     <option >+1.75</option>
+                     <option >+1.50</option>
+                     <option >+1.25</option>
+                     <option >+1.00</option>
+                     <option >+0.75</option>
+                     <option >+0.50</option>
+                     <option >+0.25</option>
+                     <option >0.00</option>
+                     <option >-0.25</option>
+                     <option >-0.50</option>
+                     <option >-0.75</option>
+                     <option >-1.00</option>
+                     <option >-1.25</option>
+                     <option >-1.50</option>
+                     <option >-1.75</option>
+                     <option >-2.00</option>
+                     <option >-2.25</option>
+                     <option >-2.50</option>
+                     <option >-2.75</option>
+                     <option >-3.00</option>
+                     <option >-3.25</option>
+                     <option >-3.50</option>
+                     <option >-3.75</option>
+                     <option >-4.00</option>
+                     <option >-4.25</option>
+                     <option >-4.50</option>
+                     <option >-4.75</option>
+                     <option >-5.00</option>
+                     <option >-5.25</option>
+                     <option >-5.50</option>
+                     <option >-5.75</option>
+                     <option >-6.00</option>
+                     <option >-6.25</option>
+                     <option >-6.50</option>
+                     <option >-6.75</option>
+                     <option >-7.00</option>
+                     <option >-7.25</option>
+                    </datalist>
+                    <span asp-validation-for="Sphere" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Cylinder" class="control-label"></label>
-                <input asp-for="Cylinder" class="form-control" />
+                <label asp-for="Cylinder" class="control-label"></label>                 
+                @*<input asp-for="Cylinder" class="form-control" />*@                 
+                @* <input asp-for="Sphere" class="form-control" type="text" list="sphere" /> *@                            
+                <input  asp-for="Cylinder" class="form-control" type="text" list="Cylinder" />
+                <datalist id="Cylinder">               
+
+                                            <option >+2.50</option>
+                                            <option >+2.25</option>
+                                            <option >+2.00</option>
+                                            <option >+1.75</option>
+                                            <option >+1.50</option>
+                                            <option >+1.25</option>
+                                            <option >+1.00</option>
+                                            <option >+0.75</option>
+                                            <option >+0.50</option>
+                                            <option >+0.25</option>
+                                            <option >0.00</option>
+                                            <option >-0.25</option>
+                                            <option >-0.50</option>
+                                            <option >-0.75</option>
+                                            <option >-1.00</option>
+                                            <option >-1.25</option>
+                                            <option >-1.50</option>
+                                            <option >-1.75</option>
+                                            <option >-2.00</option>
+                                            <option >-2.25</option>
+                                            <option >-2.50</option>
+                                            <option >-2.75</option>
+                                            <option >-3.00</option>
+                                            <option >-3.25</option>
+                                            <option >-3.50</option>
+                                            <option >-3.75</option>
+                                            <option >-4.00</option>
+                                            <option >-4.25</option>
+                                            <option >-4.50</option>
+                                            <option >-4.75</option>
+                                            <option >-5.00</option>
+                                            <option >-5.25</option>
+                                            <option >-5.50</option>
+                                            <option >-5.75</option>
+                                            <option >-6.00</option>
+                                            <option >-6.25</option>
+                                            <option >-6.50</option>
+                                            <option >-6.75</option>
+                                            <option >-7.00</option>
+                                            <option >-7.25</option>
                 <span asp-validation-for="Cylinder" class="text-danger"></span>
+                </datalist>
             </div>
             <div class="form-group">
-                <label asp-for="Axis" class="control-label"></label>
-                <input asp-for="Axis" class="form-control" />
+                <label asp-for="Axis" class="control-label"></label> 
+               @* <input asp-for="Axis" class="form-control" />*@
+               <input asp-for="Axis" class="form-control" type="text" list="Axis" />
+               <datalist id="Axis">                                        
+                                            <option >010</option>
+                                            <option >020</option>
+                                            <option >030</option>
+                                            <option >040</option>
+                                            <option >050</option>
+                                            <option >060</option>
+                                            <option >070</option>
+                                            <option >080</option>
+                                            <option >090</option>
+                                            <option >110</option>
+                                            <option >120</option>
+                                            <option >130</option>
+                                            <option >140</option>
+                                            <option >150</option>
+                                            <option >160</option>
+                                            <option >170</option>
+                                            <option >180</option>
+                   </datalist>
                 <span asp-validation-for="Axis" class="text-danger"></span>
             </div>
             <div class="form-group">

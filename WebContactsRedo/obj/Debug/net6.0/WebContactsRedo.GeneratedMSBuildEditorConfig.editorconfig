@@ -19,6 +19,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/britt/Desktop/Repos/WebContactsRedo/WebContactsRedo/Views/ContactForms/Brands.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdEZvcm1zXEJyYW5kcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/britt/Desktop/Repos/WebContactsRedo/WebContactsRedo/Views/ContactForms/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdEZvcm1zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -39,8 +43,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdEZvcm1zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/britt/Desktop/Repos/WebContactsRedo/WebContactsRedo/Views/ContactForms/ShowSearch.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdEZvcm1zXFNob3dTZWFyY2guY3NodG1s
+[C:/Users/britt/Desktop/Repos/WebContactsRedo/WebContactsRedo/Views/ContactForms/ShowSearchForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdEZvcm1zXFNob3dTZWFyY2hGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/britt/Desktop/Repos/WebContactsRedo/WebContactsRedo/Views/Home/Index.cshtml]

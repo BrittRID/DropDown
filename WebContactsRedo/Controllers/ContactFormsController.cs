@@ -1,9 +1,8 @@
-﻿#nullable disable
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebContactsRedo.Data;
 using WebContactsRedo.Models;
+
 
 namespace WebContactsRedo.Controllers
 {
@@ -17,10 +16,10 @@ namespace WebContactsRedo.Controllers
         }
 
 
-
         // GET: ContactForms
         public async Task<IActionResult> Index()
         {
+
             ViewBag.BrandItems = new List<SelectListItem>
             {
                 new SelectListItem { Text = "Mitsubishi", Value = "1" },
@@ -31,32 +30,23 @@ namespace WebContactsRedo.Controllers
             return View(await _context.ContactForm.ToListAsync());
         }
 
-
-
-         private List<Brand> GetBrand()
-        {
-            var Brand = new List<Brand>();
-            Brand.Add(new Brand() { Id = 1, Title = "Proclear 1" });
-            Brand.Add(new Brand() { Id = 2, Title = "Proclear 2" });
-            Brand.Add(new Brand() { Id = 3, Title = "Proclear 3" });
-            Brand.Add(new Brand() { Id = 4, Title = "Proclear 4" });
-
-            return Brand;
-        }
-
-
-        // GET: ContactForms/ShowSearchForm - search for name 
-        public async Task<IActionResult> ShowSearch()
+        public async Task<IActionResult> Brands()
         {
             return View();
         }
 
-        //Show search results by First Name 
+
+        // GET: ContactForms/ShowSearchForm - search for name 
+        public async Task<IActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+
         public async Task<IActionResult> ShowSearchResults(string SearchPhrase)
         {
-           
             return View("Index", await _context.ContactForm.Where(j => j.LastName.Contains(SearchPhrase)).ToListAsync());
         }
+
 
 
         // GET: ContactForms/Details/5
@@ -78,6 +68,20 @@ namespace WebContactsRedo.Controllers
         }
 
         // GET: ContactForms/Create
+        //public async Task<IActionResult> Create()
+        //{
+
+        //    ViewBag.BrandItems = new List<SelectListItem>
+        //    {
+        //        new SelectListItem { Text = "Mitsubishi", Value = "1" },
+        //        new SelectListItem { Text = "Ford", Value = "2" },
+        //        new SelectListItem { Text = "Sony", Value = "3" },
+        //    };
+
+        //    return View(await _context.ContactForm.ToListAsync());
+        //}
+
+
         public IActionResult Create()
         {
             return View();
@@ -184,4 +188,7 @@ namespace WebContactsRedo.Controllers
             return _context.ContactForm.Any(e => e.Id == id);
         }
     }
+
+
 }
+

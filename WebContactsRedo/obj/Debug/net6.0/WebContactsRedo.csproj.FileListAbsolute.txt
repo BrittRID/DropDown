@@ -274,3 +274,14 @@ C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\obj\Debug\net6.0\re
 C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\obj\Debug\net6.0\WebContactsRedo.pdb
 C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\obj\Debug\net6.0\WebContactsRedo.genruntimeconfig.cache
 C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\obj\Debug\net6.0\ref\WebContactsRedo.dll
+C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\bin\Debug\net6.0\Syncfusion.Blazor.Buttons.dll
+C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\bin\Debug\net6.0\Syncfusion.Blazor.Core.dll
+C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\bin\Debug\net6.0\Syncfusion.Blazor.Data.dll
+C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\bin\Debug\net6.0\Syncfusion.Blazor.DropDowns.dll
+C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\bin\Debug\net6.0\Syncfusion.Blazor.Inputs.dll
+C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\bin\Debug\net6.0\Syncfusion.Blazor.Popups.dll
+C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\bin\Debug\net6.0\Syncfusion.Blazor.Spinner.dll
+C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\bin\Debug\net6.0\Syncfusion.Blazor.SplitButtons.dll
+C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\bin\Debug\net6.0\Syncfusion.Licensing.dll
+C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\Users\britt\Desktop\Repos\WebContactsRedo\WebContactsRedo\bin\Debug\net6.0\System.IO.Packaging.dll

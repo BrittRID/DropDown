@@ -82,7 +82,8 @@
                 @Html.DisplayFor(modelItem => item.ZipCode)
             </td>
             <td>
-                @Html.DropDownListFor(model => item.Brand, (List<SelectListItem>) ViewBag.BrandItems)
+                @Html.DisplayFor(modelItem  => item.Brand)
+                  @*   @Html.DropDownListFor(model => item.Brand), (List<SelectListItem>) ViewBag.BrandItems)*@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Sphere)
