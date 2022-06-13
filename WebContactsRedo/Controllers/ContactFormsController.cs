@@ -30,7 +30,7 @@ namespace WebContactsRedo.Controllers
             return View(await _context.ContactForm.ToListAsync());
         }
 
-        public async Task<IActionResult> Brands()
+        public async Task<IActionResult> Order()
         {
             return View();
         }

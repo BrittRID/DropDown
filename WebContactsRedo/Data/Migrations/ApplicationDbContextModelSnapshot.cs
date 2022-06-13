@@ -239,6 +239,9 @@ namespace WebContactsRedo.Data.Migrations
                     b.Property<double>("Axis")
                         .HasColumnType("float");
 
+                    b.Property<double>("BC")
+                        .HasColumnType("float");
+
                     b.Property<double>("BaseCurve")
                         .HasColumnType("float");
 
@@ -247,6 +250,10 @@ namespace WebContactsRedo.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Cyl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -260,6 +267,9 @@ namespace WebContactsRedo.Data.Migrations
                     b.Property<double>("Dia")
                         .HasColumnType("float");
 
+                    b.Property<double>("Diameter")
+                        .HasColumnType("float");
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -269,6 +279,14 @@ namespace WebContactsRedo.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MF")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Multifocal")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sph")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -284,9 +302,37 @@ namespace WebContactsRedo.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<double>("axis")
+                        .HasColumnType("float");
+
+                    b.Property<string>("brand")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("ContactForm");
+                });
+
+            modelBuilder.Entity("WebContactsRedo.Models.SelectListItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SelectListItem");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

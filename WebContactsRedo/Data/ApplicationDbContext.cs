@@ -8,8 +8,10 @@ namespace WebContactsRedo.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+
         }
         public DbSet<WebContactsRedo.Models.ContactForm> ContactForm { get; set; }
         public DbSet<WebContactsRedo.Models.SelectListItem> SelectListItem { get; set; }
+        public DbSet<WebContactsRedo.Models.Order>? Order { get; set; }
     }
 }

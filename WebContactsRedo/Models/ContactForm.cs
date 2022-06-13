@@ -12,6 +12,7 @@
         public string State { get; set; }
         public string ZipCode { get; set; }
 
+        //Right Eye
         public string Brand { get; set; }
 
         public string Sphere { get; set; }
@@ -20,6 +21,9 @@
         public double BaseCurve { get; set; }
         public double Dia { get; set; }
         public string MF { get; set; }
+
+        public string brand { get; set; }
+
 
         public ContactForm()
         {
