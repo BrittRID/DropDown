@@ -101,22 +101,16 @@
                 <label asp-for="ZipCode" class="control-label"></label>
                 <input asp-for="ZipCode" class="form-control" />
                 <span asp-validation-for="ZipCode" class="text-danger"></span>
-            </div>
-            <br />
-            <div>
-                Right Eye
-            </div>
-            <br />
-            <div class="form-group">
-                
-                <label asp-for="Brand" class="control-label"></label>
-               @* <input asp-for="Brand" class="form-control"/>   *@              
-                <input asp-for="Brand" class="form-control" type="text" list="brand" />
+            </div>            
+             <div class="form-group">                
+                <label asp-for="Brand" class="control-label"></label>  
+                 
+                 <input asp-for="Brand" class="form-control" type="text" list="brand" />
                  <datalist id="brand">
-                 <option>1 Day Moist</option>
-                 <option>Proclear</option>
-                 <option>AC 2</option>
-                 <option>1 Day Oasys</option>
+                 <option value="1 Day Moist">1 Day Moist</option>
+                 <option value="Proclear">Proclear</option>
+                 <option value="AC 2">AC 2</option>
+                 <option value="1 Day Oasys">1 Day Oasys</option>
                  </datalist>
                 <span asp-validation-for="Brand" class="text-danger"></span>
             </div>        
@@ -125,7 +119,7 @@
                 @*<input asp-for="Sphere" class="form-control" />*@                
                 <input asp-for="Sphere" class="form-control" type="text" list="sphere" />
                      <datalist id="sphere">                    
-                     <option> +2.50</option>
+                     <option value="2.50"> +2.50</option>
                      <option >+2.25</option>
                      <option >+2.00</option>
                      <option >+1.75</option>
@@ -136,7 +130,7 @@
                      <option >+0.50</option>
                      <option >+0.25</option>
                      <option >0.00</option>
-                     <option >-0.25</option>
+                     <option value="-0.25">-0.25</option>
                      <option >-0.50</option>
                      <option >-0.75</option>
                      <option >-1.00</option>
@@ -256,23 +250,13 @@
                 <label asp-for="MF" class="control-label"></label>
                 <input asp-for="MF" class="form-control" />
                 <span asp-validation-for="MF" class="text-danger"></span>
-            </div>
-            <br />
-            <div>
-                Left Eye
-            </div>
-            <br />
-
-           
-
-
+            </div>            
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
-
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
